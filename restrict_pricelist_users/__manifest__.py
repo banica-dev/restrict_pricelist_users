@@ -12,6 +12,7 @@
         'views/product_pricelist_views.xml',
         'security/pricelist_rules.xml',
     ],
+    'images': ['static/description/banner.png'],
     'category': 'Sale',
     'depends': ['base', 'sale'],
 }
