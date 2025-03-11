@@ -1,0 +1,28 @@
+<odoo>
+    <record id="group_view_own_pricelists" model="res.groups">
+        <field name="name">Own Pricelists</field>
+        <field name="category_id" ref="base.module_category_sales"/>
+    </record>
+
+    <record id="group_view_all_pricelists" model="res.groups">
+        <field name="name">All Pricelists</field>
+        <field name="category_id" ref="base.module_category_sales"/>
+        <field name="implied_ids" eval="[(4, ref('group_view_own_pricelists'))]"/>
+    </record>
+
+    <record id="rule_view_own_pricelists" model="ir.rule">
+        <field name="name">Own pricelists</field>
+        <field name="model_id" ref="model_product_pricelist"/>
+        <field name="groups" eval="[(4, ref('group_view_own_pricelists'))]"/>
+        <field name="perm_read" eval="True"/>
+        <field name="domain_force">['|', ('allowed_users', 'in', user.id), ('allowed_users', '=', False)]</field>
+    </record>
+
+    <record id="rule_view_all_pricelists" model="ir.rule">
+        <field name="name">All pricelists</field>
+        <field name="model_id" ref="model_product_pricelist"/>
+        <field name="groups" eval="[(4, ref('group_view_all_pricelists'))]"/>
+        <field name="perm_read" eval="True"/>
+        <field name="domain_force">[]</field>
+    </record>
+</odoo>

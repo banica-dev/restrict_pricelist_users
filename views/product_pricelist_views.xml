@@ -1,0 +1,11 @@
+<odoo>
+    <record id="product_pricelist_view_restriction_user" model="ir.ui.view">
+        <field name="model">product.pricelist</field>
+        <field name="inherit_id" ref="product.product_pricelist_view"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='company_id']" position="after">
+                <field name="allowed_users" widget="many2many_tags"/>
+            </xpath>
+        </field>
+    </record>
+</odoo>
