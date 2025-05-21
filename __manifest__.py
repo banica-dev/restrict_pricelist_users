@@ -14,4 +14,6 @@
     ],
     'category': 'Sale',
     'depends': ['base', 'sale'],
+    'price': 15.00,
+    'currency': 'USD',
 }
