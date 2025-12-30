@@ -4,7 +4,10 @@
         <field name="inherit_id" ref="product.product_pricelist_view"/>
         <field name="arch" type="xml">
             <xpath expr="//field[@name='company_id']" position="after">
-                <field name="allowed_users" widget="many2many_tags"/>
+                <field name="allowed_users"
+                       widget="many2many_tags"
+                       string="Allowed Users"
+                       placeholder="Leave empty to allow all users in the restricted group"/>
             </xpath>
         </field>
     </record>

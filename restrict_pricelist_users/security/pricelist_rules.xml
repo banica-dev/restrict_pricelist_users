@@ -15,6 +15,9 @@
         <field name="model_id" ref="model_product_pricelist"/>
         <field name="groups" eval="[(4, ref('group_view_own_pricelists'))]"/>
         <field name="perm_read" eval="True"/>
+        <field name="perm_write" eval="False"/>
+        <field name="perm_create" eval="False"/>
+        <field name="perm_unlink" eval="False"/>
         <field name="domain_force">['|', ('allowed_users', 'in', user.id), ('allowed_users', '=', False)]</field>
     </record>
 
@@ -23,6 +26,9 @@
         <field name="model_id" ref="model_product_pricelist"/>
         <field name="groups" eval="[(4, ref('group_view_all_pricelists'))]"/>
         <field name="perm_read" eval="True"/>
+        <field name="perm_write" eval="False"/>
+        <field name="perm_create" eval="False"/>
+        <field name="perm_unlink" eval="False"/>
         <field name="domain_force">[]</field>
     </record>
 </odoo>
