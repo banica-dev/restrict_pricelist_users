@@ -7,6 +7,8 @@
     'author': 'Banica Daniel',
     'maintainers': ["banica-dev"],
     'license': 'OPL-1',
+    'price': 10,
+    'currency': "EUR",
     'installable': True,
     'data': [
         'views/product_pricelist_views.xml',
