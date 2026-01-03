@@ -5,7 +5,7 @@
                    "ensuring that only authorized users can view or manage pricelist data.",
     'version': '16.0.0.1',
     'author': 'Banica Daniel',
-    'maintainers': ["banica-dev"],
+    'maintainers': ["danielsostenia"],
     'license': 'OPL-1',
     'installable': True,
     'data': [
