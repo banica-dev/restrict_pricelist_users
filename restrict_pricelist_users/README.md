@@ -53,3 +53,8 @@ Odoo addon that restricts access to **Product Pricelists** using a Many2many fie
    - PL2: Allowed Users = (empty)
 3. Login as U1: you should see PL1 and PL2.
 4. Login as U2: you should only see PL2.
+
+
+## Live Demo
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/2kjrHfIb4Dc?si=xg19Ed1XfYv1KyDd" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>

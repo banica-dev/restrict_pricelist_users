@@ -21,4 +21,6 @@
     ],
     'category': 'Sale',
     'depends': ['base', 'sale'],
+    'live_test_url': 'https://www.youtube.com/watch?v=2kjrHfIb4Dc',
+
 }
